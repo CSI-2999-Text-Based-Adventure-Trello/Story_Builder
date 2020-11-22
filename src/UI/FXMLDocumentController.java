@@ -91,19 +91,19 @@ public class FXMLDocumentController implements Initializable {
     }
 
     public void printATXT(int number) throws IOException {
-        for (int i = 1; i <= number; i++) {
-            switch (1) {
+        for (int i = 1; i <= Integer.parseInt(numberOfDescision.getText()); i++) {
+            switch (i) {
                 case 1:
                     sF.saveATXT1(oneGoTo.getText(), oneDecision.getText(), oneDeath.getText());
                     break;
                 case 2:
-                    sF.saveATXT1(twoGoTo.getText(), twoDecision.getText(), twoDeath.getText());
+                    sF.saveATXT2(twoGoTo.getText(), twoDecision.getText(), twoDeath.getText());
                     break;
                 case 3:
-                    sF.saveATXT1(threeGoTo.getText(), threeDecision.getText(), threeDeath.getText());
+                    sF.saveATXT2(threeGoTo.getText(), threeDecision.getText(), threeDeath.getText());
                     break;
                 case 4:
-                    sF.saveATXT1(fourGoTo.getText(), fourDecision.getText(), fourDeath.getText());
+                    sF.saveATXT2(fourGoTo.getText(), fourDecision.getText(), fourDeath.getText());
                     break;
                 default:
                     errorlog.setText("Over Case?");
@@ -123,6 +123,7 @@ public class FXMLDocumentController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         lSGF.load();
+        setDeath();
         errorlog.setVisible(false);
         finished.setVisible(false);
     }
