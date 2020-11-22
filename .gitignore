@@ -3,3 +3,6 @@
 /build/
 savedGames/
 Story/
+nbproject/private/private.xml
+dist/Story_Builder.jar
+build/built-jar.properties

@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
@@ -137,10 +138,11 @@
         </GridPane>
     </center>
    <bottom>
-      <Button mnemonicParsing="false" onAction="#finishedButtonAction" text="Finished" BorderPane.alignment="CENTER">
-         <BorderPane.margin>
-            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-         </BorderPane.margin>
-      </Button>
+      <HBox alignment="CENTER" prefHeight="38.0" prefWidth="1366.0" spacing="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#clearButtonAction" text="Clear" />
+            <Button mnemonicParsing="false" onAction="#finishedButtonAction" text="Finished" />
+         </children>
+      </HBox>
    </bottom>
 </BorderPane>

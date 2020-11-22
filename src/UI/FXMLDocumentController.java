@@ -63,8 +63,7 @@ public class FXMLDocumentController implements Initializable {
     private void finishedButtonAction(ActionEvent event) {
         main.Story_Builder.textNumber = textNumber.getText();
         try {
-            sF.saveQTXT(numberOfDescision.getText(), question.getText(), storyText.getText()
-            );
+            sF.saveQTXT(numberOfDescision.getText(), question.getText(), storyText.getText());
             for (int i = 1; i <= Integer.parseInt(numberOfDescision.getText()); i++) {
                 switch (i) {
                     case 1:
@@ -84,10 +83,16 @@ public class FXMLDocumentController implements Initializable {
                         break;
                 }
             }
+            clear();
         } catch (Exception e) {
             errorlog.setText("ERROR!!, set the numberOfDescision");
             errorlog.setVisible(true);
         }
+    }
+
+    @FXML
+    private void clearButtonAction(ActionEvent event) {
+        clear();
     }
 
     public void printATXT(int number) throws IOException {
@@ -118,6 +123,28 @@ public class FXMLDocumentController implements Initializable {
         twoDeath.setText("false");
         threeDeath.setText("false");
         fourDeath.setText("false");
+    }
+
+    public void clear() {
+        errorlog.setText("");
+        finished.setText("");
+        textNumber.setText("");
+        numberOfDescision.setText("");
+        question.setText("");
+        storyText.setText("");
+        oneGoTo.setText("");
+        oneDecision.setText("");
+        oneDeath.setText("");
+        twoGoTo.setText("");
+        twoDecision.setText("");
+        twoDeath.setText("");
+        threeGoTo.setText("");
+        threeDecision.setText("");
+        threeDeath.setText("");
+        fourGoTo.setText("");
+        fourDecision.setText("");
+        fourDeath.setText("");
+        setDeath();
     }
 
     @Override
