@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.FXMLDocumentController">
+    <top>
+        <Label text="Story Helper" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+        </Label>
+    </top>
+    <center>
+        <GridPane BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+                    <children>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Enter Story Line" />
+                        <GridPane prefHeight="315.0" prefWidth="590.0" vgap="10.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="10.0" prefWidth="112.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="448.0" minWidth="10.0" prefWidth="448.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="90.0" minHeight="0.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="246.0" minHeight="10.0" prefHeight="185.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="numberOfDescision" />
+                                <Label text="question" GridPane.rowIndex="1" />
+                                <Label text="storyText" GridPane.rowIndex="2" />
+                                <TextArea fx:id="question" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <TextArea fx:id="storyText" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <TextField fx:id="numberOfDescision" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" />
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="10.0" right="10.0" />
+                            </padding>
+                        </GridPane>
+                  <Label fx:id="finished" text="Label:" />
+                  <Label fx:id="errorlog" text="Label:" />
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </VBox>
+                <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" GridPane.columnIndex="1" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+                    <children>
+                  <TextField fx:id="textNumber" />
+                        <GridPane prefHeight="600.0" prefWidth="600.0" vgap="10.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="10.0" prefWidth="66.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="524.0" minWidth="10.0" prefWidth="524.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="70.0" minHeight="80.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Go to" />
+                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="decision" GridPane.rowIndex="1" />
+                                <TextField fx:id="oneGoTo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="499.0" GridPane.columnIndex="1" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Go to" GridPane.rowIndex="3" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Go to" GridPane.rowIndex="9" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Go to" GridPane.rowIndex="6" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="decision" GridPane.rowIndex="4" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="decision" GridPane.rowIndex="7" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="decision" GridPane.rowIndex="10" />
+                        <TextField fx:id="twoGoTo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="499.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="threeGoTo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="499.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextField fx:id="fourGoTo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="499.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Death" GridPane.rowIndex="2" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Death" GridPane.rowIndex="5" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Death" GridPane.rowIndex="8" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Death" GridPane.rowIndex="11" />
+                        <TextField fx:id="oneDeath" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="499.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="twoDeath" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="499.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField fx:id="threeDeath" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="499.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <TextField fx:id="fourDeath" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="499.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <TextArea fx:id="oneDecision" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextArea fx:id="twoDecision" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextArea fx:id="threeDecision" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <TextArea fx:id="fourDecision" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="10.0" right="10.0" />
+                            </padding>
+                        </GridPane>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </VBox>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </GridPane>
+    </center>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#finishedButtonAction" text="Finished" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>
