@@ -29,6 +29,8 @@ public class FXMLDocumentController implements Initializable {
     private TextArea question;
     @FXML
     private TextArea storyText;
+    @FXML
+    private TextField image;
     //Decision
     //One
     @FXML
@@ -63,7 +65,7 @@ public class FXMLDocumentController implements Initializable {
     private void finishedButtonAction(ActionEvent event) {
         main.Story_Builder.textNumber = textNumber.getText();
         try {
-            sF.saveQTXT(numberOfDescision.getText(), question.getText(), storyText.getText());
+            sF.saveQTXT(numberOfDescision.getText(), question.getText(), storyText.getText(), image.getText());
             for (int i = 1; i <= Integer.parseInt(numberOfDescision.getText()); i++) {
                 switch (i) {
                     case 1:
@@ -83,6 +85,8 @@ public class FXMLDocumentController implements Initializable {
                         break;
                 }
             }
+            finished.setText("files created");
+            finished.setVisible(true);
             clear();
         } catch (Exception e) {
             errorlog.setText("ERROR!!, set the numberOfDescision");
@@ -114,8 +118,6 @@ public class FXMLDocumentController implements Initializable {
                     errorlog.setText("Over Case?");
             }
         }
-        finished.setText("files created");
-        finished.setVisible(true);
     }
 
     public void setDeath() {
@@ -132,6 +134,7 @@ public class FXMLDocumentController implements Initializable {
         numberOfDescision.setText("");
         question.setText("");
         storyText.setText("");
+        image.setText("");
         oneGoTo.setText("");
         oneDecision.setText("");
         oneDeath.setText("");

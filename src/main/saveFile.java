@@ -10,13 +10,13 @@ import java.nio.file.StandardOpenOption;
 
 public class saveFile {
 
-    public void saveQTXT(String numberOfDescision, String question, String storyText) throws IOException {
+    public void saveQTXT(String numberOfDescision, String question, String storyText, String image) throws IOException {
         Paths.get(".");
         String path = Story_Builder.storyLocation + "\\" + main.Story_Builder.textNumber + "Q.txt";
         File fileLedger = new File(path);
         FileWriter fw = new FileWriter(fileLedger);
         PrintWriter pw = new PrintWriter(fw);
-        pw.print(numberOfDescision + "\n" + question + "\n" + storyText);
+        pw.print(numberOfDescision + "\n" + question + "\n" + storyText + "\n" + image);
         pw.close();
     }
     
