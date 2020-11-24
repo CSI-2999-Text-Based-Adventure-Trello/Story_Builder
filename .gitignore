@@ -6,3 +6,8 @@ Story/
 nbproject/private/private.xml
 dist/Story_Builder.jar
 build/built-jar.properties
+build/built-jar.properties
+*.html
+dist/Story_Builder.html
+dist/Story_Builder.jar
+dist/Story_Builder.jnlp
