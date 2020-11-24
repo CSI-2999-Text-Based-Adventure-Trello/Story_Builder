@@ -36,7 +36,7 @@
                 <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
                     <children>
                         <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Enter Story Line" />
-                        <GridPane prefHeight="398.0" prefWidth="653.0" vgap="10.0">
+                        <GridPane prefHeight="500.0" prefWidth="700.0" vgap="10.0">
                             <columnConstraints>
                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="10.0" prefWidth="112.0" />
                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="448.0" minWidth="10.0" prefWidth="448.0" />
@@ -49,13 +49,37 @@
                             </rowConstraints>
                             <children>
                                 <Label text="numberOfDescision" />
-                                <Label text="question" GridPane.rowIndex="1" />
-                                <Label text="storyText" GridPane.rowIndex="2" />
                                 <TextArea fx:id="question" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                 <TextArea fx:id="storyText" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                                 <TextField fx:id="numberOfDescision" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" />
                         <Label text="Image (DON'T ADD .png)" GridPane.rowIndex="3" />
                         <TextField fx:id="image" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.rowIndex="2">
+                           <children>
+                                      <Label text="storyText">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label prefHeight="50.0" prefWidth="145.0" text="Don't places enter will break the code." wrapText="true">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.rowIndex="1">
+                           <children>
+                                      <Label text="question" />
+                              <Label prefHeight="50.0" prefWidth="145.0" text="Don't places enter will break the code." wrapText="true" />
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </VBox>
                             </children>
                             <VBox.margin>
                                 <Insets />
